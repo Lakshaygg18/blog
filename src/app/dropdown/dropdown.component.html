@@ -1,0 +1,78 @@
+<!-- Using Items Input -->
+
+
+
+
+
+      
+
+     
+      
+        
+
+
+      <!-- <select  class="custom-select mb-3"
+      (change)="changeUniversity($event)"
+      [(ngModel)]="university">
+        <option value="">Choose University</option>
+        <option *ngFor="let user of users" [ngValue]="user.university">{{user.university}}</option>
+      </select> -->
+    
+<!-- <div class="input-group">
+  <input type="search"  #searchbar  class="form-control rounded" (keyup)="fetchUniversity(searchbar.value)" [(ngModel)]="university" (change)="onChange($event)"  placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary">search</button>
+</div>
+<ul *ngFor="let user of searchResult" >
+  <li (click)="selectUniversity(user.university)">
+    {{user.university}}
+  </li>
+</ul> -->
+<div class="container">
+  <br/>
+<div class="row justify-content-center">
+                      <div class="col-12 col-md-10 col-lg-8">
+                          <form class="card card-sm">
+                              <div class="card-body row no-gutters align-items-center">
+                                  <div class="col-auto">
+                                      <i class="fas fa-search h4 text-body"></i>
+                                  </div>
+                                  <!--end of col-->
+                                  <div class="col">
+                                    <ng-select [(ngModel)]="university" #search [ngModelOptions]="{standalone: true}" (change)="onOptionChange(university)" class="form-control form-control-lg form-control-borderless" placeholder="Search" >
+                                      <ng-option *ngFor="let user of users"  >{{user.university}} </ng-option>
+                                    </ng-select>
+                                    
+                                  </div>
+                                      
+                                  
+                                  <!--end of col-->
+                                  <div class="col-auto">
+                                      <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                  </div>
+                                  <!--end of col-->
+                              </div>
+                        </form>
+                      </div>
+                      <!--end of col-->
+                  </div>
+</div>
+
+
+<!-- <div class="input-group">
+  <input type="search" class="form-control rounded" [(ngModel)]="university" (ngModelChange)="fetchUniversity($event)" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary">search</button>
+</div>
+<select>
+  <option *ngFor="let user of users">{{ user.university }}</option>
+</select>
+
+<ul *ngIf="searchResult.length > 0">
+  <li *ngFor="let user of searchResult" (click)="selectUniversity(user.university)">
+    {{ user.university }}
+  </li>
+</ul>  -->
+
+
+
+
+

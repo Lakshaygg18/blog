@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <ng-select #select class="select-establishment-selection" [(ngModel)]="selectedValue" #selectElement
+          [items]="users" [virtualScroll]="true" placeholder="Pesquisar..." [searchable]="true"
+          [bindValue]="'id'" [bindLabel]="'title'" [multiple]="false" spinner-enabled="true"
+          [closeOnSelect]="isCloseOnSelectEnabled" (ngModelChange)="onSelectedValueChange()">
+        <ng-template ng-option-tmp let-item="item" let-search="searchTerm">
+            <div style="width: 100%; margin-left:8px;margin-top: 1px;">   
+                {{ item.title }}
+            </div>
+        </ng-template>
+        </ng-select>
+      </div>
+    </div>
+  </div>

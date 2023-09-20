@@ -1,0 +1,9 @@
+.form-control-borderless {
+  border: 5px;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: 10px;
+  outline: 5px;
+  box-shadow: none;
+}

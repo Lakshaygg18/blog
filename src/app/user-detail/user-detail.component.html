@@ -1,0 +1,8 @@
+<select [(ngModel)]="deptId">
+<option *ngFor="let dept of departments" value="{{dept.id}}">{{dept.name}}</option>
+</select>
+<p>{{deptId}}</p>
+
+
+<!-- <li>{{item.name}}</li>
+<li>{{item.email}}</li> -->
